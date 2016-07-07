@@ -301,7 +301,7 @@ exec --no-startup-id firefox
 exec --no-startup-id variety
 # exec --no-startup-id blueman
 # exec_always --no-startup-id sbxkb
-exec --no-startup-id start_conky_maia
+exec --no-startup-id start_conky_grey
 # exec --no-startup-id start_conky_green
 exec --no-startup-id xautolock -time 10 -locker blurlock
 
@@ -315,19 +315,18 @@ bar {
 
 	bindsym button4 nop
 	bindsym button5 nop
-	font pango:Cantarell,Icons 11
+	font pango:Cantarell,Icons 14
 
 	colors {
-#	background $transparent
-		background #2B2C2B
-                statusline #F9FAF9
-		separator  #454947
+background #000000
+statusline #2E9AFE
+separator #00000
 
 #                                  border  backgr. text
-		focused_workspace  #F9FAF9 #16A085 #2B2C2B
-		active_workspace   #595B5B #353836 #FDF6E3
-		inactive_workspace #595B5B #353836 #EEE8D5
-		urgent_workspace   #16A085 #FDF6E3 #E5201D
+focused_workspace #2E9AFE #cccccc #2E9AFE
+active_workspace #2E9AFE #444444 #2E9AFE
+inactive_workspace #2E9AFE #000000 #2E9AFE
+urgent_workspace #2E9AFE #000000 #900000
 	}
 }
 
@@ -336,11 +335,12 @@ bindsym $mod+m bar mode toggle
 
 # Theme colors
 # class                 border  backgr. text    indic.  child_border
-client.focused          #808280 #808280 #80FFF9 #FDF6E3
-client.focused_inactive #434745 #434745 #16A085 #454948
-client.unfocused        #434745 #434745 #16A085 #454948
-client.urgent           #CB4B16 #FDF6E3 #16A085 #268BD2
-client.placeholder      #000000 #0c0c0c #ffffff #000000 #0c0c0c
+client.placeholder      #242424 #242424 #242424
+client.background       #242424 #242424 #242424
+client.focused          #4A4A4A #4A4A4A #e5e5e5 #4A4A4A
+client.unfocused        #4A4A4A #222222 #aaaaaa #222222
+client.focused_inactive #4A4A4A #222222 #a9a9a9 #222222
+client.urgent           #4A4A4A #4A4A4A #f7f7f7 #4A4A4A
 
 client.background       #2B2C2B
 
